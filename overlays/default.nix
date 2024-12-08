@@ -9,7 +9,7 @@
 final: prev:
 let
   versions = {
-    v6_6_63.src = rpi-linux-6_6_63-src;
+    v6_6_62.src = rpi-linux-6_6_62-src;
     v6_12 = {
       src = rpi-linux-6_12-src;
       patches = [
@@ -116,7 +116,7 @@ in
   # rpi kernels and firmware are available at
   # `pkgs.rpi-kernels.<VERSION>.<BOARD>'. 
   #
-  # For example: `pkgs.rpi-kernels.v6_6_63.bcm2712'
+  # For example: `pkgs.rpi-kernels.v6_6_62.bcm2712'
   rpi-kernels = rpi-kernels (
     final.lib.cartesianProduct
       { board = boards; version = (builtins.attrNames versions); }
