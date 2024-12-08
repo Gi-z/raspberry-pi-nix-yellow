@@ -1,5 +1,5 @@
 { u-boot-src
-, rpi-linux-6_6_63-src
+, rpi-linux-6_6_62-src
 , rpi-linux-6_12-src
 , rpi-firmware-src
 , rpi-firmware-nonfree-src
