@@ -2,7 +2,7 @@
   description = "raspberry-pi nixos configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     u-boot-src = {
       flake = false;
       url = "https://ftp.denx.de/pub/u-boot/u-boot-2024.10.tar.bz2";
@@ -11,13 +11,13 @@
       flake = false;
       url = "github:raspberrypi/linux/rpi-6.6.y";
     };
-    rpi-linux-6_10_12-src = {
+    rpi-linux-6_12-src = {
       flake = false;
-      url = "github:raspberrypi/linux/rpi-6.10.y";
+      url = "github:raspberrypi/linux/rpi-6.12.y";
     };
     rpi-firmware-src = {
       flake = false;
-      url = "github:raspberrypi/firmware/1.20241001";
+      url = "github:raspberrypi/firmware/1.20241126";
     };
     rpi-firmware-nonfree-src = {
       flake = false;

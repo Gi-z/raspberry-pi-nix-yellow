@@ -1,6 +1,6 @@
 { u-boot-src
 , rpi-linux-6_6_63-src
-, rpi-linux-6_10_12-src
+, rpi-linux-6_12-src
 , rpi-firmware-src
 , rpi-firmware-nonfree-src
 , rpi-bluez-firmware-src
@@ -10,8 +10,8 @@ final: prev:
 let
   versions = {
     v6_6_63.src = rpi-linux-6_6_63-src;
-    v6_10_12 = {
-      src = rpi-linux-6_10_12-src;
+    v6_12 = {
+      src = rpi-linux-6_12-src;
       patches = [
         {
           name = "remove-readme-target.patch";
@@ -85,7 +85,7 @@ in
     defconfig = "rpi_arm64_defconfig";
     extraMeta.platforms = [ "aarch64-linux" ];
     filesToInstall = [ "u-boot.bin" ];
-    version = "2024.04";
+    version = "2024.10";
     patches = [ ];
     makeFlags = [ ];
     src = u-boot-src;
